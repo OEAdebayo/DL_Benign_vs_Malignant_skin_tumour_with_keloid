@@ -6,10 +6,13 @@ src/cnnClassifier_benign_vs_malignant.egg-info/SOURCES.txt
 src/cnnClassifier_benign_vs_malignant.egg-info/dependency_links.txt
 src/cnnClassifier_benign_vs_malignant.egg-info/top_level.txt
 src/cnnClassifier_benign_vs_malignant/components/__init__.py
+src/cnnClassifier_benign_vs_malignant/components/data_ingestion.py
 src/cnnClassifier_benign_vs_malignant/config/__init__.py
 src/cnnClassifier_benign_vs_malignant/config/configuration.py
 src/cnnClassifier_benign_vs_malignant/constants/__init__.py
 src/cnnClassifier_benign_vs_malignant/entity/__init__.py
+src/cnnClassifier_benign_vs_malignant/entity/config_entity.py
 src/cnnClassifier_benign_vs_malignant/pipeline/__init__.py
+src/cnnClassifier_benign_vs_malignant/pipeline/stage_01_data_ingestion.py
 src/cnnClassifier_benign_vs_malignant/utils/__init__.py
 src/cnnClassifier_benign_vs_malignant/utils/common.py
