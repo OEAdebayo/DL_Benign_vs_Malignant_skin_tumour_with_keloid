@@ -1,0 +1,8 @@
+#!/home/oadebayo/PhD/DL_Benign_vs_Malignant_skin_tumour_with_keloid/cancer/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+from tensorflow.lite.python.tflite_convert import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

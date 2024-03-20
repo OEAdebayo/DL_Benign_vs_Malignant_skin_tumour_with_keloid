@@ -26,3 +26,13 @@ Traceback (most recent call last):
   File "/home/oadebayo/PhD/DL_Benign_vs_Malignant_skin_tumour_with_keloid/src/cnnClassifier_benign_vs_malignant/utils/common.py", line 31, in read_yaml
     content = yaml.safe_load(yaml_file)
 NameError: name 'yaml' is not defined
+[2024-03-21 00:02:40,469: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-21 00:02:40,478: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-21 00:02:40,479: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-21 00:02:40,479: INFO: common: created directory at: artifacts]
+[2024-03-21 00:02:40,479: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-21 00:02:40,479: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1enFGVoZhyqs81zUBAUfEmhhWqez1KFEA/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-21 00:06:35,070: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1enFGVoZhyqs81zUBAUfEmhhWqez1KFEA/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-21 00:06:37,147: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
