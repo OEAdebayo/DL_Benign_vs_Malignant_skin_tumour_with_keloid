@@ -80,15 +80,3 @@ class ConfigurationManager:
 
         return training_config
     
-
-
-    def get_evaluation_config(self) -> EvaluationConfig:
-        eval_config = EvaluationConfig(
-            path_of_model="",
-            training_data="",
-            mlflow_uri="",
-            all_params=self.params,
-            params_image_size=self.params.IMAGE_SIZE,
-            params_batch_size=self.params.BATCH_SIZE
-        )
-        return eval_config
