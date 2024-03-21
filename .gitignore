@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 
 artifacts/*
+research/Skin_lesion_classification_data.zip
