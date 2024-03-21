@@ -125,3 +125,98 @@ x==========x]
 [2024-03-21 22:49:40,195: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2024-03-21 22:53:03,123: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-21 22:53:03,127: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-21 22:53:03,129: INFO: common: created directory at: artifacts]
+[2024-03-21 22:53:03,133: INFO: common: created directory at: artifacts/model_training]
+[2024-03-21 22:54:49,653: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-21 22:54:49,657: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-21 22:54:49,658: INFO: common: created directory at: artifacts]
+[2024-03-21 22:54:49,659: INFO: common: created directory at: artifacts/model_training]
+[2024-03-21 23:24:18,297: INFO: main: >>>>>> stage Data ingestion started <<<<<<]
+[2024-03-21 23:24:18,298: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-21 23:24:18,299: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-21 23:24:18,299: INFO: common: created directory at: artifacts]
+[2024-03-21 23:24:18,299: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-21 23:24:18,299: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1ALX99Nuez1VHrQFm3UZRQrSZrrkEKrky/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-21 23:27:16,986: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1ALX99Nuez1VHrQFm3UZRQrSZrrkEKrky/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-21 23:27:18,950: INFO: main: >>>>>> stage Data ingestion completed <<<<<<
+
+x==========x]
+[2024-03-21 23:27:18,950: INFO: main: *******************]
+[2024-03-21 23:27:18,950: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-21 23:27:18,951: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-21 23:27:18,952: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-21 23:27:18,952: INFO: common: created directory at: artifacts]
+[2024-03-21 23:27:18,952: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-21 23:27:19,243: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-21 23:27:19,645: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-21 23:27:19,645: INFO: main: *******************]
+[2024-03-21 23:27:19,645: INFO: main: >>>>>> stage Model training started <<<<<<]
+[2024-03-21 23:27:19,647: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-21 23:27:19,647: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-21 23:27:19,648: INFO: common: created directory at: artifacts]
+[2024-03-21 23:27:19,648: ERROR: main: "'ConfigBox' object has no attribute 'training'"]
+Traceback (most recent call last):
+  File "box/box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'training'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 536, in box.box.Box.__getattr__
+  File "box/box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'training'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'training'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'training'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'training'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 536, in box.box.Box.__getattr__
+  File "box/box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'training'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'training'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 35, in <module>
+    model_training_obj.main()
+  File "/home/oadebayo/PhD/DL_Benign_vs_Malignant_skin_tumour_with_keloid/src/cnnClassifier_benign_vs_malignant/pipeline/stage_03_model_training.py", line 14, in main
+    training_config = config.get_training_config()
+  File "/home/oadebayo/PhD/DL_Benign_vs_Malignant_skin_tumour_with_keloid/src/cnnClassifier_benign_vs_malignant/config/configuration.py", line 62, in get_training_config
+    training = self.config.training
+  File "box/config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'training'"
+[2024-03-22 00:22:08,830: INFO: main: >>>>>> stage Data ingestion started <<<<<<]
+[2024-03-22 00:22:08,831: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-22 00:22:08,832: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-22 00:22:08,832: INFO: common: created directory at: artifacts]
+[2024-03-22 00:22:08,832: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-22 00:22:08,832: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1ALX99Nuez1VHrQFm3UZRQrSZrrkEKrky/view?usp=sharing into file artifacts/data_ingestion/data.zip]
