@@ -36,3 +36,13 @@ NameError: name 'yaml' is not defined
 [2024-03-21 00:06:37,147: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-03-21 02:20:17,508: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-21 02:20:17,525: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-21 02:20:17,528: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-21 02:20:17,530: INFO: common: created directory at: artifacts]
+[2024-03-21 02:20:17,531: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-21 02:20:17,531: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1enFGVoZhyqs81zUBAUfEmhhWqez1KFEA/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-21 02:22:17,349: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1enFGVoZhyqs81zUBAUfEmhhWqez1KFEA/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-21 02:22:28,110: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
