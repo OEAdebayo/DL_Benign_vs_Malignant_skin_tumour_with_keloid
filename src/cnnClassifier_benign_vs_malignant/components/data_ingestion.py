@@ -5,6 +5,8 @@ from src.cnnClassifier_benign_vs_malignant import logger
 from src.cnnClassifier_benign_vs_malignant.utils.common import get_size
 from src.cnnClassifier_benign_vs_malignant.entity.config_entity import (DataIngestionConfig)
 
+
+
 class DataIngestion:
     def __init__(self, config:DataIngestionConfig):
         self.config = config
